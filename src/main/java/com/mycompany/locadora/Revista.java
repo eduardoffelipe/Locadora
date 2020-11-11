@@ -15,7 +15,7 @@ public class Revista extends Produto{
   public String toString() {
     return "Revista: " + this.getNome() 
     + "\nCodigo: " + this.getCodigo() 
-    + "\nPreço" + this.getPreco() 
+    + "\nPreço: R$" + this.getPreco() 
     + "\nQuantidade: " + this.getQuantidade()
     + "\nEditora: " + this.getEditora();
   }

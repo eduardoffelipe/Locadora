@@ -62,7 +62,7 @@ public class Alugados {
     public String toString() {
         String retorno = "Data da Locação: " + this.dataLocacao;
         retorno += "\nCliente: " + this.cliente.getNome();
-        retorno += "\nValor Total a Pagar: " + this.precoTotal;
+        retorno += "\nValor Total a Pagar: R$" + this.precoTotal;
         for (Produto produto : produtos) {
             retorno += "\nProduto: " + produto.getNome();
         }

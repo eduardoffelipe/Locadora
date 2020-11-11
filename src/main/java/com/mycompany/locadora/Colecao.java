@@ -6,7 +6,7 @@ public class Colecao {
     private String codigo;
     private String nome;
     private double preco;
-    private ArrayList<Livro> colecao1 = new ArrayList<>();
+    private ArrayList<Livro> colecao = new ArrayList<>();
 
     public Colecao(String codigo, String nome) {
         this.nome = nome;
@@ -17,15 +17,15 @@ public class Colecao {
   
     //methods
     public void addLivroColection(Livro livro){
-        colecao1.add(livro);
+        colecao.add(livro);
     }
 
     @Override
     public String toString() {
         return "Colecao: " + this.nome 
         + "\nCódigo: " + codigo 
-        + "\nPreco: " + preco 
-        + "\nLivros na Coleção: \n" + colecao1;
+        + "\nPreco: R$" + preco 
+        + "\nLivros na Coleção: \n" + colecao;
     }
     
 

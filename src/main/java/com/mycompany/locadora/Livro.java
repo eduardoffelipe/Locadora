@@ -14,12 +14,21 @@ public class Livro extends Produto {
     @Override
     public String toString() {
     return "Livro: " + this.getNome() 
-    + "\nCodigo:" + this.getCodigo() 
-    + "\nPreço: " + this.getPreco() 
+    + "\nCodigo: " + this.getCodigo() 
+    + "\nPreço: R$" + this.getPreco() 
     + "\nQuantidade: " 
     + this.getQuantidade();
   }
     
+    // getters and setters
 
+    public boolean isIsColection() {
+        return isColection;
+    }
+
+    public void setIsColection(boolean isColection) {
+        this.isColection = isColection;
+    }
+    
     
 }

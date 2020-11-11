@@ -14,6 +14,10 @@ public class Venda {
     public void venderProduto(Produto produto, Cliente cliente) {
         try {
             if (produto.getQuantidade() >= 1) {
+                if(produto instanceof Livro && ((Livro)produto).isIsColection()){
+                    System.out.println("Livro de uma Coleção não pode ser vendido separadamente.");
+                    System.exit(0);
+                }  
                 this.setCliente(cliente);
                 produto.setQuantidade(produto.getQuantidade() - 1);
                 pedido.add(produto);
@@ -44,7 +48,7 @@ public class Venda {
     @Override
     public String toString() {
         String retorno = "\nCliente: " + this.cliente.getNome();
-        retorno += "\nValor Total a Pagar: " + valorApagar();
+        retorno += "\nValor Total a Pagar: R$" + valorApagar();
         for (Produto produto : pedido) {
             retorno += "\nProduto: " + produto.getNome();
         }
