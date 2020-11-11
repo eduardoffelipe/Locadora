@@ -19,7 +19,18 @@ public class Colecao {
     public void addLivroColection(Livro livro){
         colecao.add(livro);
     }
-
+    public boolean confereEstoque(){
+        for(Livro item: colecao){
+            if(item.getQuantidade() <= 0){
+                System.out.println("Sem estoque de livro na coleção");
+                return false;
+            }else{
+                 return true;
+            }
+        }
+        return false;
+    }
+    
     @Override
     public String toString() {
         return "Colecao: " + this.nome 

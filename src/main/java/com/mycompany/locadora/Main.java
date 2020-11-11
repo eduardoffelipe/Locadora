@@ -5,26 +5,26 @@ public class Main {
     
     public static void main(String[] args) {
        Cliente c1 = new Cliente("Carlos", "(28)99999999", "centro", false, true);
-        System.out.println(c1);
-        System.out.println();
+        //System.out.println(c1);
+        //System.out.println();
 
         Dvd d1 = new Dvd("D001" , "Magal Espetacular", 5, "Sidney Magal",false);
-        System.out.println(d1);
-        System.out.println();
+        //System.out.println(d1);
+        //System.out.println();
         Revista r1 = new Revista("R001" , "O Globo", 1, "Globo",false);
-        System.out.println(r1);
-        System.out.println();
+        //System.out.println(r1);
+        //System.out.println();
 
         Livro l1 = new Livro("L001", "Enciclopedia Geografia", 1, true,false);
 
         Colecao col1 = new Colecao("c001", "Enciclopedia");
         col1.addLivroColection(l1);
-        System.out.println(col1);
-        System.out.println();
+        //System.out.println(col1);
+        //System.out.println();
 
         Livro l2 = new Livro("L002", "Hp", 1, false,true);
-        System.out.println(l2);
-        System.out.println();
+       // System.out.println(l2);
+        //System.out.println();
         
         Alugados x = new Alugados();
         //x.alugarProduto(l2, c1);
@@ -35,7 +35,9 @@ public class Main {
         //x.devolucaoProduto(l2);
         //System.out.println(x);
         Venda v = new Venda();
-        v.venderProduto(d1,c1);
+        //v.venderProduto(d1,c1);
+        //System.out.println(v);
+        v.venderColecao(col1, c1);
         System.out.println(v);
     }
     
