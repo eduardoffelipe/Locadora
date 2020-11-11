@@ -4,7 +4,7 @@ public class Main {
     
     
     public static void main(String[] args) {
-       Cliente c1 = new Cliente("Carlos", "(28)99999999", "centro", true, true);
+       Cliente c1 = new Cliente("Carlos", "(28)99999999", "centro", false, true);
         //System.out.println(c1);
         //System.out.println();
 
@@ -27,13 +27,16 @@ public class Main {
         //System.out.println();
         
         Alugados x = new Alugados();
-        x.addProdutoAlugado(l2, c1);
-        x.addProdutoAlugado(l1, c1);
-        System.out.println(x);
+        //x.alugarProduto(l2, c1);
+        //x.alugarProduto(l1, c1);
+        //System.out.println(x);
         System.out.println();
         //x.devolucaoProduto(l1);
         //x.devolucaoProduto(l2);
-        System.out.println(x);
+        //System.out.println(x);
+        Venda v = new Venda();
+        v.venderProduto(l1,c1);
+        System.out.println(v);
     }
     
 } 
