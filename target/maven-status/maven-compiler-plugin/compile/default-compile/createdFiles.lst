@@ -1,6 +1,10 @@
+com\mycompany\locadora\Alugados.class
 com\mycompany\locadora\Dvd.class
 com\mycompany\locadora\Cliente.class
 com\mycompany\locadora\Produto.class
 com\mycompany\locadora\Revista.class
 com\mycompany\locadora\Livro.class
+com\mycompany\locadora\Colecao.class
+com\mycompany\locadora\Venda.class
 com\mycompany\locadora\Main.class
+com\mycompany\locadora\Estoque.class

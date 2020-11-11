@@ -1,7 +1,6 @@
 package com.mycompany.locadora;
 
-public class Dvd extends Produto{
-    
+public class Dvd extends Produto{ 
     private String artista;
     
     //constructor
@@ -12,7 +11,7 @@ public class Dvd extends Produto{
     }
     
     //methods    
-    public String Imprime() {
+    public String toString() {
     return "Dvd: " + this.getNome() 
     + "\nCodigo: " + this.getCodigo() 
     + "\nPreço:" + this.getPreco() 
