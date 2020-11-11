@@ -1,19 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.locadora;
-
-import java.util.Date;
 
 public class Dvd extends Produto{
     
     private String artista;
     
     //constructor
-    public Dvd(String codigo, String nome, int quantidade, String artista) {
-        super(codigo, nome, quantidade);
+    public Dvd(String codigo, String nome, int quantidade, String artista,boolean alugado) {
+        super(codigo, nome, quantidade,alugado);
         this.artista = artista;
         this.setPreco(20.00);
     }
@@ -22,7 +15,7 @@ public class Dvd extends Produto{
     public String Imprime() {
     return "Dvd: " + this.getNome() 
     + "\nCodigo: " + this.getCodigo() 
-    + "\nPreço" + this.getPreco() 
+    + "\nPreço:" + this.getPreco() 
     + "\nQuantidade: " + this.getQuantidade()
     + "\nArtista: " + this.getArtista();
   };

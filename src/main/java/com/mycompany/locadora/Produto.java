@@ -1,31 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.locadora;
 
-import java.util.Date;
-
 public abstract class Produto {
-  private String codigo;
-  private String nome;                         
-  private Double preco;                         
-  private Date dataUltimaLocacao;
-  private int quantidade;
-    
-  //constructor
-    public Produto(String codigo, String nome, int quantidade) {
+    private String codigo;
+    private String nome;
+    private Double preco;
+    private int quantidade;
+    private boolean isAlugado;
+
+    // constructor
+    public Produto(String codigo, String nome, int quantidade, boolean isAlugado) {
         this.codigo = codigo;
         this.nome = nome;
         this.quantidade = quantidade;
+        this.isAlugado = isAlugado;
     }
-    
-    //methods
-    
-    
-    
-    //getters and setters
+
+    // methods
+
+
+    // getters and setters
     public String getCodigo() {
         return codigo;
     }
@@ -50,14 +43,6 @@ public abstract class Produto {
         this.preco = preco;
     }
 
-    public Date getDataUltimaLocacao() {
-        return dataUltimaLocacao;
-    }
-
-    public void setDataUltimaLocacao(Date dataUltimaLocacao) {
-        this.dataUltimaLocacao = dataUltimaLocacao;
-    }
-
     public int getQuantidade() {
         return quantidade;
     }
@@ -65,6 +50,12 @@ public abstract class Produto {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
-  
-  
+
+    public boolean isAlugado() {
+        return isAlugado;
+    }
+
+    public void setisAlugado(boolean isAlugado) {
+        this.isAlugado = isAlugado;
+    }
 }

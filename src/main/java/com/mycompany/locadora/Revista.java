@@ -1,17 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.locadora;
-
-import java.util.Date;
 
 public class Revista extends Produto{
   private String editora;
 
-    public Revista(String codigo, String nome, int quantidade, String editora) {
-        super(codigo, nome, quantidade);
+    public Revista(String codigo, String nome, int quantidade, String editora,boolean alugado) {
+        super(codigo, nome, quantidade,alugado);
         this.editora = editora;
         this.setPreco(15.00);
     }

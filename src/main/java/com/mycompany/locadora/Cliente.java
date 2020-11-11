@@ -1,20 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.locadora;
-
 
 public class Cliente {
   private String nome;
   private String telefone;
   private String endereco; 
   private boolean isVip;
-  private int entrega;
+  private boolean entrega;
 
     //constructor
-    public Cliente(String nome, String telefone, String endereco, boolean isVip, boolean isEntrega) {
+    public Cliente(String nome, String telefone, String endereco, boolean isVip, boolean entrega) {
         this.nome = nome;
         this.telefone = telefone;
         this.endereco = endereco;
@@ -26,11 +20,16 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" + "nome=" + nome + ", telefone=" + telefone + ", endereco=" + endereco + ", isVip=" + isVip + ", entrega=" + entrega + '}';
+        return "Cliente: " + "{"
+        + "Nome =" + nome 
+        + ", Telefone: " + telefone 
+        + ", Endereco: " + endereco 
+        + ", isVip: " + isVip 
+        + ", Entrega: " + entrega 
+        + '}';
     }
     
-    
-    
+
     //getters and setters
     public String getNome() {
         return nome;
@@ -64,11 +63,11 @@ public class Cliente {
         this.isVip = isVip;
     }
 
-    public int getIsEntrega() {
+    public boolean isEntrega() {
         return entrega;
     }
 
-    public void setIsEntrega(boolean isEntrega) {
+    public void setEntrega(boolean entrega) {
         this.entrega = entrega;
     }
 

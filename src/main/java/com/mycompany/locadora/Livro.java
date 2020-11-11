@@ -1,19 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.locadora;
-
-import java.util.Date;
-
 
 public class Livro extends Produto {
   private boolean isColection;
     
     //constructor
-    public Livro(String codigo, String nome, int quantidade, boolean isColection) {
-        super(codigo, nome, quantidade);
+    public Livro(String codigo, String nome, int quantidade,boolean isColection, boolean alugado) {
+        super(codigo, nome, quantidade, alugado);
         this.setPreco(50.00);
         this.isColection = isColection;
     }

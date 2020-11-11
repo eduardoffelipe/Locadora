@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.locadora;
 
 import java.util.ArrayList;
@@ -19,10 +14,7 @@ public class Colecao {
         this.preco = 200.00;
     }
 
-
-    
   
-    
     //methods
     public void addLivroColection(Livro livro){
         colecao1.add(livro);
@@ -31,9 +23,9 @@ public class Colecao {
     @Override
     public String toString() {
         return "Colecao: " + this.nome 
-                + "\nCódigo: " + codigo 
-                + "\nPreco: " + preco 
-                + "\nLivros na Coleção: \n" + colecao1;
+        + "\nCódigo: " + codigo 
+        + "\nPreco: " + preco 
+        + "\nLivros na Coleção: \n" + colecao1;
     }
     
 
